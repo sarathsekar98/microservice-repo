@@ -23,3 +23,13 @@ management:
 
 info:
   app: ${spring.application.name}
+
+#eureka client configuration setup are here
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka
