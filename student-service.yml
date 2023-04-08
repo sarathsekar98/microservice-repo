@@ -1,3 +1,7 @@
+
+server:
+  port: 7001
+
 #actutor enable
 management:
   endpoints:
