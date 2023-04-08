@@ -1,6 +1,11 @@
-
+#server port
 server:
   port: 7001
+
+#mongodatabase config added here
+mongo:
+  database: Student
+  uri: mongodb://localhost:27017/
 
 #actutor enable
 management:
