@@ -1,0 +1,16 @@
+#actutor enable
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+  #info enabled
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+
+info:
+  app: ${spring.application.name}
