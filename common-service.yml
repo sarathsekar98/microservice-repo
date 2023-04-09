@@ -1,0 +1,26 @@
+
+resilience4j:
+  retry:
+    instances:
+      refrator1:
+        max-attempts: 3
+        wait-duration: 1000s
+      refractor2:
+        max-attempts: 5
+        wait-duration: 1000s
+    metrics:
+      enabled: true
+      legacy:
+        enabled: true
+
+server:
+  port: 7002
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka
