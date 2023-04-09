@@ -4,7 +4,7 @@ resilience4j:
     instances:
       retryed:
         max-attempts: 3
-        wait-duration: 1000s
+        wait-duration: 1s
     metrics:
       enabled: true
       legacy:
