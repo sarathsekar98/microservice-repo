@@ -2,11 +2,8 @@
 resilience4j:
   retry:
     instances:
-      refrator1:
+      retryed:
         max-attempts: 3
-        wait-duration: 1000s
-      refractor2:
-        max-attempts: 5
         wait-duration: 1000s
     metrics:
       enabled: true
